@@ -73,6 +73,7 @@
   box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent);
   transition: all 0.2s ease;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .c_button_primary:hover {
