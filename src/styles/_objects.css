@@ -1,0 +1,29 @@
+/*--*\
+  #OBJECTS
+\*--*/
+
+/**
+ * Container object for max-width constraints
+ */
+.o-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+/**
+ * Grids and Layouts
+ */
+.o-grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .o-grid--12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

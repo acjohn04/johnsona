@@ -1,0 +1,85 @@
+.c_top_app_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: color-mix(in srgb, var(--color-surface) 70%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-surface-container);
+}
+
+.c_top_app_bar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+}
+
+.c_top_app_bar__logo {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-on-background);
+  letter-spacing: -0.05em;
+}
+
+.c_top_app_bar__desktop_nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .c_top_app_bar__desktop_nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+}
+
+.c_top_app_bar__nav_link {
+  color: var(--color-on-surface-variant);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.c_top_app_bar__nav_link:hover {
+  color: var(--color-primary);
+}
+
+.c_top_app_bar__nav_link--active {
+  color: var(--color-primary);
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 4px;
+}
+
+.c_top_app_bar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* Button style could be an object, but scoping it here for modularity per BEM module rules */
+.c_button_primary {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-family: var(--font-label);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.c_button_primary:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.c_button_primary:active {
+  transform: scale(0.98);
+}

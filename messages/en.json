@@ -1,0 +1,82 @@
+{
+  "Navigation": {
+    "about": "About",
+    "skills": "Skills",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "Hero": {
+    "titlePrefix": "Engineering ",
+    "titleVariant": "Leader",
+    "titleSuffix": " & Frontend Architect.",
+    "subtitle": "I build high-performing engineering teams and scale robust frontend architectures.",
+    "expertise": "My Expertise",
+    "location": "Based in Louisville, KY / Available USA"
+  },
+  "About": {
+    "title": "The Narrative",
+    "narrative": "With fifteen years of software engineering experience, including four years in management at CNET Media Group, I have built a career around delivering scalable, high-performance web applications and establishing robust design systems. I specialize in bridging the gap between product vision and engineering feasibility, utilizing deep expertise in semantic HTML, CSS, TypeScript, and modern component frameworks. As an engineering leader, I focus on empowering high-performing teams through proactive support, mentorship, and streamlined Agile processes that consistently increase team velocity and project delivery",
+    "highlight1": {
+      "title": "Engineering Leadership & Mentorship",
+      "description": "I leverage an empowering management philosophy and the GROW framework to coach engineers, resulting in a 50% promotion rate among my direct reports. Additionally, I drive operational efficiency by refining Agile processes, such as streamlining sprint planning to reduce ticket rollover by 20% and improving cross-functional communication with product and design teams."
+    },
+    "highlight2": {
+      "title": "Frontend Architecture & Design Systems",
+      "description": "I have extensive experience architecting scalable, reusable component libraries and custom SCSS frameworks across large-scale portfolios, such as replatforming a 12-site network for CBSi. By implementing strict token naming conventions and utilizing frameworks like Vue, I ensure consistent cross-site branding, faster development times, and highly performant, pixel-perfect user experiences."
+    },
+    "highlight3": {
+      "title": "Process Optimization & Operational Resilience",
+      "description": "I proactively reduce implementation complexity by negotiating sprint capacity to tackle tech debt and creating automated workflows, such as Slack integrations that cut bug resolution time by 10%. Furthermore, I manage critical system availability by monitoring outage events with tools like New Relic and Pingdom, successfully diagnosing and resolving complex server-side performance issues to minimize downtime."
+    }
+  },
+  "Skills": {
+    "title": "Stack & ",
+    "titleVariant": "Mastery",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "leadership": "Leadership & Strategy",
+      "infrastructure": "Infrastructure",
+      "tooling": "Tooling",
+      "ai": "AI"
+    },
+    "items": {
+      "core": "HTML, CSS, TypeScript",
+      "vue": "Vue & Nuxt.js",
+      "react": "React & Next.js",
+      "cwv": "Core Web Vitals",
+      "a11y": "Accessibility (WCAG)",
+      "mentorship": "Mentorship",
+      "systemDesign": "System Design",
+      "planning": "Planning & Delivery",
+      "agile": "Agile Methodologies",
+      "collaboration": "Cross-Functional Collaboration",
+      "aws": "AWS",
+      "gcp": "GCP",
+      "cicd": "CI/CD Pipelines",
+      "node": "Node.js",
+      "symfony": "Symfony",
+      "figma": "Figma",
+      "gemini": "Gemini",
+      "github": "GitHub",
+      "claudeCode": "Claude Code",
+      "storybook": "Storybook",
+      "cypress": "Cypress",
+      "newrelic": "New Relic",
+      "copilot": "Copilot"
+    }
+  },
+  "Contact": {
+    "title": "Let's ",
+    "titleVariant": "Collaborate",
+    "subtitle": "Available for engineering manager roles or architectural consulting. Let's build something that sets a new standard.",
+    "button": "Start A Conversation"
+  },
+  "Footer": {
+    "builtWith": "Built with precision.",
+    "github": "GitHub",
+    "githubUrl": "https://github.com/acjohn04/",
+    "linkedin": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/adam-johnson-eng/"
+  }
+}

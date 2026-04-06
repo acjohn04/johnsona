@@ -1,0 +1,25 @@
+.c_theme_toggle {
+  background: transparent;
+  border: 1px solid var(--color-outline-variant);
+  color: var(--color-on-surface);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.c_theme_toggle:hover {
+  background: var(--color-surface-container);
+  border-color: var(--color-primary);
+}
+
+.c_theme_toggle_placeholder {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+}

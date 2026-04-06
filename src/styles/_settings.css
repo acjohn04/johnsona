@@ -1,0 +1,53 @@
+/*--*\
+  #SETTINGS
+\*--*/
+
+:root {
+  /* Typography */
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-sm: calc(var(--spacing-unit) * 2); /* 16px */
+  --spacing-md: calc(var(--spacing-unit) * 4); /* 32px */
+  --spacing-lg: calc(var(--spacing-unit) * 8); /* 64px */
+  --spacing-xl: calc(var(--spacing-unit) * 16); /* 128px */
+
+  /* Light Theme (Default/Generated) */
+  --color-background: #fcfcfc;
+  --color-on-background: #1c1b1b;
+  --color-surface: #ffffff;
+  --color-surface-container: #f3f3f3;
+  --color-surface-container-low: #f8f8f8;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #49454f;
+  
+  --color-primary: #00668a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #c3e8ff;
+  --color-on-primary-container: #001e2c;
+
+  --color-outline: #79747e;
+  --color-outline-variant: #cac4d0;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --color-background: #0e0e0e;
+  --color-on-background: #e5e2e1;
+  --color-surface: #131313;
+  --color-surface-container: #20201f;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #bcc8d1;
+  
+  --color-primary: #8fd6ff;
+  --color-on-primary: #003549;
+  --color-primary-container: #00bfff;
+  --color-on-primary-container: #004a65;
+
+  --color-outline: #87929b;
+  --color-outline-variant: #3d4850;
+}

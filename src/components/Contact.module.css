@@ -1,0 +1,91 @@
+.c_contact {
+  background-color: var(--color-surface-container-low);
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.c_contact__inner {
+  text-align: center;
+}
+
+.c_contact__title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .c_contact__title {
+    font-size: 8rem;
+  }
+}
+
+.c_contact__subtitle {
+  font-size: 1.25rem;
+  color: var(--color-on-surface-variant);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.625;
+}
+
+.c_contact__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .c_contact__actions {
+    flex-direction: row;
+  }
+}
+
+.c_contact__button {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  padding: 24px 48px;
+  font-family: var(--font-label);
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px color-mix(in srgb, var(--color-primary) 20%, transparent);
+  transition: all 0.3s ease;
+}
+
+.c_contact__button:hover {
+  transform: scale(1.05);
+}
+
+.c_contact__button:active {
+  transform: scale(0.95);
+}
+
+.c_contact__socials {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.c_contact__social_link {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--color-outline-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  color: var(--color-on-surface);
+}
+
+.c_contact__social_link:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

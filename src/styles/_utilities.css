@@ -1,0 +1,23 @@
+/*--*\
+  #UTILITIES
+\*--*/
+
+.u-text-center { text-align: center; }
+.u-text-primary { color: var(--color-primary); }
+.u-italic { font-style: italic; }
+.u-font-label { font-family: var(--font-label); }
+.u-uppercase { text-transform: uppercase; }
+.u-tracking-widest { letter-spacing: 0.1em; }
+.u-tracking-tighter { letter-spacing: -0.04em; }
+
+/* Trumps/Overrides */
+.u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

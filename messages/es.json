@@ -1,0 +1,82 @@
+{
+  "Navigation": {
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "hireMe": "Contrátame"
+  },
+  "Hero": {
+    "titlePrefix": "Gestión de ",
+    "titleVariant": "Ingeniería",
+    "titleSuffix": " y Arquitecto Frontend.",
+    "subtitle": "Construyo equipos de ingeniería de alto rendimiento y escalo arquitecturas frontend robustas.",
+    "expertise": "Mi Experiencia",
+    "location": "Basado en Louisville, KY / Disponible en USA"
+  },
+  "About": {
+    "title": "La Narrativa",
+    "narrative": "Con quince años de experiencia en ingeniería de software, incluyendo cuatro años en gestión en CNET Media Group, he construido una carrera en torno a la entrega de aplicaciones web escalables y de alto rendimiento y el establecimiento de sistemas de diseño robustos. Me especializo en cerrar la brecha entre la visión del producto y la viabilidad técnica, utilizando una profunda experiencia en HTML semántico, CSS, TypeScript y frameworks de componentes modernos. Como líder de ingeniería, me enfoco en empoderar equipos de alto rendimiento a través de apoyo proactivo, mentoría y procesos Agile optimizados que incrementan consistentemente la velocidad del equipo y la entrega de proyectos.",
+    "highlight1": {
+      "title": "Liderazgo de Ingeniería y Mentoría",
+      "description": "Aprovecho una filosofía de gestión empoderadora y el marco GROW para entrenar ingenieros, resultando en una tasa de promoción del 50% entre mis informes directos. Además, impulso la eficiencia operativa refinando los procesos Agile, como la optimización de la planificación de sprints para reducir el arrastre de tickets en un 20% y mejorar la comunicación interfuncional con los equipos de producto y diseño."
+    },
+    "highlight2": {
+      "title": "Arquitectura Frontend y Sistemas de Diseño",
+      "description": "Tengo una amplia experiencia en la arquitectura de librerías de componentes escalables y reutilizables y marcos SCSS personalizados en carteras a gran escala, como el replatforming de una red de 12 sitios para CBSi. Al implementar convenciones estrictas de nombres de tokens y utilizar marcos como Vue, aseguro una marca consistente en todos los sitios, tiempos de desarrollo más rápidos y experiencias de usuario altamente performantes y pixel-perfect."
+    },
+    "highlight3": {
+      "title": "Optimización de Procesos y Resiliencia Operativa",
+      "description": "Reduzco proactivamente la complejidad de la implementación negociando la capacidad del sprint para abordar la deuda técnica y creando flujos de trabajo automatizados, como integraciones de Slack que reducen el tiempo de resolución de errores en un 10%. Además, gestiono la disponibilidad crítica del sistema monitoreando eventos de interrupción con herramientas como New Relic y Pingdom, diagnosticando y resolviendo con éxito problemas complejos de rendimiento del lado del servidor para minimizar el tiempo de inactividad."
+    }
+  },
+  "Skills": {
+    "title": "Stack y ",
+    "titleVariant": "Maestría",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "leadership": "Liderazgo y Estrategia",
+      "infrastructure": "Infraestructura",
+      "tooling": "Herramientas",
+      "ai": "IA"
+    },
+    "items": {
+      "core": "HTML, CSS, TypeScript",
+      "vue": "Vue y Nuxt.js",
+      "react": "React y Next.js",
+      "cwv": "Core Web Vitals",
+      "a11y": "Accesibilidad (WCAG)",
+      "mentorship": "Mentoría",
+      "systemDesign": "Diseño de Sistemas",
+      "planning": "Planificación y Entrega",
+      "agile": "Metodologías Ágiles",
+      "collaboration": "Colaboración Interfuncional",
+      "aws": "AWS",
+      "gcp": "GCP",
+      "cicd": "Pipelines CI/CD",
+      "node": "Node.js",
+      "symfony": "Symfony",
+      "figma": "Figma",
+      "gemini": "Gemini",
+      "github": "GitHub",
+      "claudeCode": "Claude Code",
+      "storybook": "Storybook",
+      "cypress": "Cypress",
+      "newrelic": "New Relic",
+      "copilot": "Copilot"
+    }
+  },
+  "Contact": {
+    "title": "Vamos a ",
+    "titleVariant": "Colaborar",
+    "subtitle": "Disponible para roles de gerente de ingeniería o consultoría arquitectónica. Construyamos algo que establezca un nuevo estándar.",
+    "button": "Iniciar una Conversación"
+  },
+  "Footer": {
+    "builtWith": "Construido con precisión.",
+    "github": "GitHub",
+    "githubUrl": "https://github.com/acjohn04/",
+    "linkedin": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/adam-johnson-eng/"
+  }
+}
