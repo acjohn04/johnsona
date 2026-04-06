@@ -15,7 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    index: '01',
     title: 'Frontend',
     skills: [
       { name: 'React & Next.js', percentage: 95 },
