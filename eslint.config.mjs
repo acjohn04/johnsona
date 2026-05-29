@@ -1,22 +1,29 @@
-// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
-import storybook from "eslint-plugin-storybook";
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import svelte from 'eslint-plugin-svelte';
+import globals from 'globals';
 
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
-
-const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
-  ...storybook.configs["flat/recommended"]
-]);
-
-export default eslintConfig;
+export default tseslint.config(
+	eslint.configs.recommended,
+	...tseslint.configs.recommended,
+	...svelte.configs['flat/recommended'],
+	{
+		languageOptions: {
+			globals: {
+				...globals.browser,
+				...globals.node
+			}
+		}
+	},
+	{
+		files: ['**/*.svelte'],
+		languageOptions: {
+			parserOptions: {
+				parser: tseslint.parser
+			}
+		}
+	},
+	{
+		ignores: ['.svelte-kit/', 'build/', 'node_modules/', 'dist/', '.storybook/']
+	}
+);

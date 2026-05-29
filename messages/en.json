@@ -3,7 +3,7 @@
     "about": "About",
     "skills": "Skills",
     "contact": "Contact",
-    "hireMe": "Hire Me"
+    "hireMe": "Contact Me"
   },
   "Hero": {
     "titlePrefix": "Engineering ",
@@ -73,7 +73,7 @@
     "button": "Start A Conversation"
   },
   "Footer": {
-    "builtWith": "Built with precision.",
+    "builtWith": "",
     "github": "GitHub",
     "githubUrl": "https://github.com/acjohn04/",
     "linkedin": "LinkedIn",

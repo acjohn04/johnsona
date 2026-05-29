@@ -1,5 +1,5 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+<!-- BEGIN:svelte5-agent-rules -->
+# This is Svelte 5
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+This project uses Svelte 5. Use Runes (`$state`, `$derived`, `$props`, `$effect`) instead of Svelte 4's `let` reassignments, `$:`, `export let`, and lifecycle hooks.
+<!-- END:svelte5-agent-rules -->
