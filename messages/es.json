@@ -2,6 +2,7 @@
   "Navigation": {
     "about": "Acerca de",
     "skills": "Habilidades",
+    "projects": "Proyectos",
     "contact": "Contacto",
     "hireMe": "Contrátame"
   },
@@ -64,6 +65,20 @@
       "cypress": "Cypress",
       "newrelic": "New Relic",
       "copilot": "Copilot"
+    }
+  },
+  "Projects": {
+    "title": "Proyectos ",
+    "titleVariant": "Destacados",
+    "project1": {
+      "title": "Larder and Leaf",
+      "description": "Un sistema de inventario de despensa con generación de comidas. Construido con React, Next.js, Prisma, SQLite y Gemini.",
+      "url": "https://larder-and-leaf-production.up.railway.app/"
+    },
+    "project2": {
+      "title": "FloraFile",
+      "description": "Un sistema de inventario botánico completo con información sobre el cuidado de plantas e identificación usando IA. Construido con React, Next.js, Prisma, SQLite y Gemini.",
+      "url": "https://florafile-production.up.railway.app/"
     }
   },
   "Contact": {

@@ -60,6 +60,13 @@
 				{t('skills')}
 			</a>
 			<a 
+				href="#projects" 
+				class="c-top-app-bar__nav-link"
+				class:c-top-app-bar__nav-link--active={activeSection === 'projects'}
+			>
+				{t('projects')}
+			</a>
+			<a 
 				href="#contact" 
 				class="c-top-app-bar__nav-link"
 				class:c-top-app-bar__nav-link--active={activeSection === 'contact'}
