@@ -2,7 +2,10 @@
   import { locale, useTranslations, type Locale } from "$lib/i18n";
 
   let currentLocale: Locale = $state("en");
-  locale.subscribe((v) => (currentLocale = v));
+  $effect(() => {
+    const unsub = locale.subscribe((v) => (currentLocale = v));
+    return unsub;
+  });
 
   let t = $derived(useTranslations(currentLocale, "Projects"));
 
@@ -51,12 +54,7 @@
           <div class="c-project-card__content">
             <h3 class="c-project-card__title">
               {project.title}
-              <span
-                class="material-symbols-outlined c-project-card__arrow"
-                aria-hidden="true"
-              >
-                arrow_outward
-              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" class="c-project-card__arrow" aria-hidden="true"><path d="M256-240 216-280l436-436H360v-64h384v384h-64v-292L256-240Z"/></svg>
             </h3>
             <p class="c-project-card__description">
               {project.description}

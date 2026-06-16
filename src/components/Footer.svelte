@@ -2,7 +2,10 @@
 	import { locale, useTranslations, type Locale } from '$lib/i18n';
 
 	let currentLocale: Locale = $state('en');
-	locale.subscribe((v) => (currentLocale = v));
+	$effect(() => {
+		const unsub = locale.subscribe((v) => (currentLocale = v));
+		return unsub;
+	});
 
 	let t = $derived(useTranslations(currentLocale, 'Footer'));
 

@@ -2,7 +2,10 @@
 	import { locale, useTranslations, type Locale } from '$lib/i18n';
 
 	let currentLocale: Locale = $state('en');
-	locale.subscribe((v) => (currentLocale = v));
+	$effect(() => {
+		const unsub = locale.subscribe((v) => (currentLocale = v));
+		return unsub;
+	});
 
 	let t = $derived(useTranslations(currentLocale, 'Hero'));
 </script>
@@ -34,6 +37,7 @@
 				alt="Adam Johnson Professional Portrait"
 				class="c-hero__image"
 				loading="eager"
+				fetchpriority="high"
 				width="1067"
 				height="1600"
 			/>

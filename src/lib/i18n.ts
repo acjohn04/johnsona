@@ -7,7 +7,6 @@
 
 import { writable, get } from 'svelte/store';
 import enMessages from '../../messages/en.json';
-import esMessages from '../../messages/es.json';
 
 export const locales = ['en', 'es'] as const;
 export type Locale = (typeof locales)[number];
@@ -16,10 +15,21 @@ export const defaultLocale: Locale = 'en';
 /** Current locale store */
 export const locale = writable<Locale>(defaultLocale);
 
-const messageMap: Record<Locale, Record<string, unknown>> = {
-	en: enMessages,
-	es: esMessages
+const messageMap: Partial<Record<Locale, Record<string, unknown>>> = {
+	en: enMessages
 };
+
+const localeModules = import.meta.glob('../../messages/*.json');
+
+export async function loadLocale(loc: Locale) {
+	if (!messageMap[loc]) {
+		const loader = localeModules[`../../messages/${loc}.json`];
+		if (loader) {
+			const mod = (await loader()) as { default: Record<string, unknown> };
+			messageMap[loc] = mod.default;
+		}
+	}
+}
 
 /**
  * Get a translated string by dotted key path for the given locale.
@@ -42,13 +52,15 @@ function resolve(obj: unknown, path: string): string {
 export function useTranslations(currentLocale: Locale, namespace?: string) {
 	return (key: string): string => {
 		const fullKey = namespace ? `${namespace}.${key}` : key;
-		return resolve(messageMap[currentLocale], fullKey);
+		const msgs = messageMap[currentLocale];
+		if (!msgs) return fullKey;
+		return resolve(msgs, fullKey);
 	};
 }
 
 /**
  * Get all messages for a locale (useful for Storybook).
  */
-export function getMessages(loc: Locale): Record<string, unknown> {
+export function getMessages(loc: Locale): Record<string, unknown> | undefined {
 	return messageMap[loc];
 }

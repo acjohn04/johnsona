@@ -5,7 +5,10 @@
 	import LocaleSwitcher from './LocaleSwitcher.svelte';
 
 	let currentLocale: Locale = $state('en');
-	locale.subscribe((v) => (currentLocale = v));
+	$effect(() => {
+		const unsub = locale.subscribe((v) => (currentLocale = v));
+		return unsub;
+	});
 
 	let t = $derived(useTranslations(currentLocale, 'Navigation'));
 	

@@ -1,11 +1,15 @@
 <script lang="ts">
-	import { locale, type Locale } from '$lib/i18n';
+	import { locale, loadLocale, type Locale } from '$lib/i18n';
 
 	let currentLocale: Locale = $state('en');
-	locale.subscribe((v) => (currentLocale = v));
+	$effect(() => {
+		const unsub = locale.subscribe((v) => (currentLocale = v));
+		return unsub;
+	});
 
-	function toggleLocale() {
+	async function toggleLocale() {
 		const nextLocale: Locale = currentLocale === 'en' ? 'es' : 'en';
+		await loadLocale(nextLocale);
 		locale.set(nextLocale);
 	}
 </script>
